@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 double avgStudentGradesSentinel(void);
+void multiplesOf5(void);
 
 int main(void) {
-    printf("%.2lfn", avgStudentGradesSentinel());
+    multiplesOf5();
 
     return 0;
 }
@@ -26,4 +27,10 @@ double avgStudentGradesSentinel(void) {
     }
 
     return total_grade == 0 ? 0 : total_grade / entries;
+}
+
+void multiplesOf5(void) {
+    for (int i = 15; i <= 45; i += 5) {
+        printf("%d\n", i);
+    }
 }

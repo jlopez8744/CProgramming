@@ -9,10 +9,10 @@ void printHello(int);
 int farenheitToCelcius(int);
 void printTemperatures(int, int);
 void printNRandom(int);
+void repeatPrint();
 
 void main() {
-    srand(time(0));
-    printNRandom(5);
+    repeatPrint();
 }
 
 void printHello(int n) {
@@ -41,5 +41,13 @@ void printNRandom(int n) {
     for (int i = 0; i < n; i++) {
         printf("%d\n", rand() % 10);
         usleep(30000);
+    }
+}
+
+void repeatPrint() {
+    int c = 1;
+    while (c <= 10) {
+        puts("I love coding!");
+        c++;
     }
 }
